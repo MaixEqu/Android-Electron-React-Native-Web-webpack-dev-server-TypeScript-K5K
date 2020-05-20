@@ -1,0 +1,8 @@
+#/usr/bash
+
+#x-terminal-emulator -e "yarn android && yarn ee"
+x-terminal-emulator -e "yarn start"
+x-terminal-emulator -e "yarn b"
+x-terminal-emulator -e "yarn ee"
+#x-terminal-emulator -e "yarn android"
+#exit

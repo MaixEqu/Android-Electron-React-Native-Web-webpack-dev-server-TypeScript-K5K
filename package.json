@@ -1,0 +1,86 @@
+{
+  "name": "elec-rnw-webpack-ts-fs-k5i",
+  "version": "0.0.4",
+  "description": "Electron, React Native Web, Webpack, Typescript",
+  "main": "main.js",
+  "author": "maix <maix@gmail.com>",
+  "homepage": ".",
+  "private": true,
+  "keywords": [
+    "electron",
+    "electron-reload",
+    "electron-builder",
+    "react",
+    "react-native",
+    "react-native-web",
+    "typescript",
+    "webpack",
+    "webpack-dev-server"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.62.2",
+    "react-native-web": "^0.12.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/runtime": "^7.9.6",
+    "@types/electron": "^1.6.10",
+    "@types/node": "^14.0.4",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-native": "^0.62.10",
+    "@types/react-test-renderer": "^16.9.2",
+    "@types/webpack": "^4.41.13",
+    "electron": "^9.0.0",
+    "electron-builder": "^22.6.1",
+    "electron-reload": "^1.5.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "^16.13.1",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "// deb": "deb",
+  "build": {
+    "appId": "com.maixtest.app",
+    "productName": "MxTSApp7-K5G",
+    "directories": {
+      "app": "./app",
+      "output": "./_builds"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "scripts": {
+    "a": "react-native run-android",
+    "android": "react-native run-android",
+    "s": "react-native start",
+    "s_": "react-native start &",
+    "aa": "yarn s_ && yarn a",
+    "start": "react-native start",
+    "b": "webpack-dev-server --open --mode development",
+    "c": "webpack --mode development",
+    "t": "tsc .",
+    "w": "webpack --mode development --watch",
+    "w_": "yarn w &",
+    "e": "NODE_DEV=Maix electron --no-sandbox ./app/main.js",
+    "ee": "yarn c && yarn w_ && yarn e",
+    "r": "./_builds/MxTSApp7-K5G-0.0.4.AppImage --no-sandbox",
+    "rasp": "electron-builder --linux --armv7l",
+    "raspx": "electron-builder --linux deb --armv7l",
+    "win": "electron-builder --win --x64",
+    "x": "electron-builder --linux --x64",
+    "xx": "electron-builder --linux deb --x64",
+    "xxz": "electron-builder --linux deb tar.xz --x64",
+    "z": "electron-builder"
+  }
+}

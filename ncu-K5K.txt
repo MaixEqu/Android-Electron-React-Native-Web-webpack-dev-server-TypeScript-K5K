@@ -1,0 +1,3 @@
+Checking /home/maick/xMx/hybrids2/And-Elec-RNW-WDS-TS-K5I/package.json
+
+All dependencies match the latest package versions :)
